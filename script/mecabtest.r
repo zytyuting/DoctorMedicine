@@ -34,6 +34,7 @@ word <- word[order(word$Freq,decreasing = T),]
 patarn <- brewer.pal(3,"Dark2")
 wordcloud(word$Term, word$Freq, min.freq = 1)
 
-
-
-
+res <- RMeCabC("チャウチャウちゃう？ちゃうちゃう、チャウチャウちゃうんちゃう？
+チャウチャウちゃう？ちゃうちゃうチャウチャウちゃうって")
+unlist (res)
+res
